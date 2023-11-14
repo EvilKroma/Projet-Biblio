@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Saiyan-Sans';                                         /*Choisi la police*/
+    src: url("../Addons/Fonts/Saiyan-Sans.ttf") format('truetype');     /*Emplacement de la police*/
+}
+
+.book_list {
+    font-family: 'Saiyan-Sans', sans-serif;                             /*Police utilisée*/
+    font-size : 1.17em;                                                 /*Choix de la taille de la police*/
+}
+
+
+.book_list img {
+    width: 100px;                                                       /*Modifie la taille des images*/
+    height: auto; 
+}
+
+
+.book_list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book_list li {
+    width: 200px; /* Largeur de chaque livre */
+    margin: 10px; /* Marge entre les livres */
+}
+
+.book_list .Tome img {
+    /* Styles pour toutes les images des livres */
+}
+
+.book_list .book-item p {
+    /* Styles pour tous les paragraphes de description des livres */
+}
