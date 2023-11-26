@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face {
     font-family: 'Saiyan-Sans';
     src: url("../Addons/Fonts/Saiyan-Sans.ttf") format('truetype');
@@ -33,3 +34,40 @@
     margin: 30px;
     text-align: center;
 }
+=======
+@font-face {
+    font-family: 'Saiyan-Sans';
+    src: url("../Addons/Fonts/Saiyan-Sans.ttf") format('truetype');
+}
+
+.logo_entete {
+    width: 100%; 
+    height: auto;
+}
+
+.book_list {
+    font-family: 'Saiyan-Sans', sans-serif;
+    font-size: 1.17rem;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.book_list p {
+    font-size: 1.5rem; 
+}
+
+.book_list img {
+    width: 100px;
+    height: auto;
+}
+
+.book_list li {
+    width: 200px;
+    margin: 30px;
+    text-align: center;
+}
+>>>>>>> 8a24f61ad66041c2cc66d2ad74d2eaf2b4fa321f
