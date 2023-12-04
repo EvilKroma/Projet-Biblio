@@ -1,15 +1,34 @@
+
 @font-face {
     font-family: 'Saiyan-Sans';
     src: url("../Addons/Fonts/Saiyan-Sans.ttf") format('truetype');
 }
 
-.logo_entete {
-    width: 100%; 
-    height: auto;
+/*Style entete*/
+
+.bandeau-navigation {
+    background-color: #ffffff; 
+    padding: 0px; 
+    text-align: center; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
+.bandeau-navigation img {
+    width: 200px;
+    height: auto; 
+}
+
+.marge-bandeau {
+    height: 90px; 
+}
+
+/*Style Home page*/
+
 .book_list {
-    font-family: 'Saiyan-Sans', sans-serif;
     font-size: 1.17rem;
     list-style: none;
     padding: 0;
@@ -17,6 +36,10 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.nom_livre {
+    font-family: 'Saiyan-Sans', sans-serif;
 }
 
 .book_list p {
@@ -33,3 +56,44 @@
     margin: 30px;
     text-align: center;
 }
+
+/*Style pages livre*/
+
+.contenu-scrollable {
+    margin-left: 400px;
+    margin-right: 300px;
+    padding-top: 50px; 
+}
+
+.image-fixe {
+    position: fixed;
+    top: 180px;
+    left: 150px;
+    width: 200px; 
+}
+
+.couverture_livre {
+    width: 100%;
+    height: auto;
+}
+
+.book-info {
+    margin-left: 400px;
+    margin-top: 200px;
+}
+
+/* Styles pour le bouton Plein écran */
+#plein-ecran {
+    display: block;
+    margin: 10px auto;
+    padding: 8px 16px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+#plein-ecran:hover {
+    background-color: #555;
+}
+
