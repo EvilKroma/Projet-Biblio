@@ -23,7 +23,7 @@
 }
 
 .marge-bandeau {
-    height: 90px; 
+    padding-top: 5%; 
 }
 
 /*Style Home page*/
@@ -66,16 +66,47 @@
 /*Style pages livre*/
 
 .contenu-scrollable {
-    margin-left: 400px;
-    margin-right: 300px;
+    margin: 10px;
+    margin-left: 40%;
+    margin-right: 10%;
+    padding-top: 50px; 
+}
+
+.book-info {
+    margin: 10px;
+    margin-left: 40%;
+    margin-right: 10%;
     padding-top: 50px; 
 }
 
 .image-fixe {
     position: fixed;
     top: 180px;
-    left: 150px;
-    width: 200px; 
+    left: 10%;
+    width: 20%; 
+}
+
+@media screen and (max-width: 600px) {
+    .contenu-scrollable {
+        margin: 10px; 
+    }
+
+    .image-fixe {
+        position: static; 
+        width: calc(100% - 20px);
+        margin-bottom: 20px; 
+        margin-left: 10px; 
+        margin-right: 10px;
+    }
+
+    .texte-défilant {
+        margin-top: 20px; 
+    }
+
+    #plein-ecran {
+        padding: 6px 12px; 
+        font-size: 14px; 
+    }
 }
 
 .couverture_livre {
@@ -83,10 +114,6 @@
     height: auto;
 }
 
-.book-info {
-    margin-left: 400px;
-    margin-top: 200px;
-}
 
 /* Styles pour le bouton Plein écran */
 #plein-ecran {
@@ -102,4 +129,5 @@
 #plein-ecran:hover {
     background-color: #555;
 }
+
 
