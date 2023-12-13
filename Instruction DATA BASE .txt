@@ -1,5 +1,0 @@
-Créer base de données 
-G05 --> importer le .sql du TP6
-Vider toutes tables, en 1e auteurs puis livres etc... on peut laisser langue par ex
-Commencer par les dernières vidées, editeur, genres, langues, roles, personnes
-Insérer des nouvelles lignes dans éditeur, personne, rôle, genre, langue PUIS livre PUIS auteur
