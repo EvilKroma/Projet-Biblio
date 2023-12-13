@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mer. 13 déc. 2023 à 10:59
--- Version du serveur : 10.4.32-MariaDB
--- Version de PHP : 8.2.12
+-- Généré le : mer. 13 déc. 2023 à 11:15
+-- Version du serveur : 10.4.28-MariaDB
+-- Version de PHP : 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -116,7 +116,12 @@ INSERT INTO `livre` (`isbn`, `titre`, `editeur`, `annee`, `genre`, `langue`, `nb
 ('2876952068', 'Dragon Ball, Tome 2 : Kaméhaméha', 1, 1993, 1, 2, NULL),
 ('2876952076', 'Dragon Ball, Tome 3 : L\'Initiation', 1, 1993, 1, 2, NULL),
 ('2876952106', 'Dragon Ball, Tome 4 : Le Tournoi', 1, 1993, 1, 2, NULL),
-('2876952114', 'Dragon Ball, Tome 5 : L\'Ultime Combat	', 1, 1994, 1, 2, NULL);
+('2876952114', 'Dragon Ball, Tome 5 : L\'Ultime Combat	', 1, 1994, 1, 2, NULL),
+('2876952122', 'Dragon Ball, Tome 6 : L\'Empire du ruban rouge', 1, 1995, 1, 2, NULL),
+('2876952173', 'Dragon Ball, Tome 7 : La Menace', 1, 1994, 1, 2, NULL),
+('2876952181', 'Dragon Ball, Tome 8 : Le Duel', 1, 1994, 1, 2, NULL),
+('287695219X', 'Dragon Ball, Tome 9 : Sangohan', 1, 1994, 1, 2, NULL),
+('2876952203', 'Dragon Ball, Tome 10 : Le Miraculé', 1, 1994, 1, 2, NULL);
 
 -- --------------------------------------------------------
 
