@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DBZ'LIB</title>
-    <link rel="icon" href="../Addons/Logos/Logo_DBZ_2.png" type="image/x-icon">
-    <link rel="stylesheet" href="dbz_style.css">
-</head>
+<?php
+$pageTitle = "DBZ'LIB";
+?>
+<?php require "header.php"; ?>
 
 <body>
     
