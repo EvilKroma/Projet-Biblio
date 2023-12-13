@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tome 6</title> <!--Changer Titre de la page-->
+    <title>Tome 2</title> <!--Changer Titre de la page-->
     <link rel="icon" href="../Addons/Logos/Logo_DBZ_2.png" type="image/x-icon">
     <link rel="stylesheet" href="dbz_style.css">
     <style>
@@ -14,32 +14,28 @@
 
 <body>
 
-    <nav class="bandeau-navigation">
-        <a href="index.html">
-            <img src="../Addons/Logos/Logo_DBZ.png" alt="Description de l'image">
-        </a>
-    </nav>
+    <?php require "nav.php"; ?>
 
     <div class="marge-bandeau"></div>
 
     <div class="contenu-scrollable">
         <div class="image-fixe">
-            <img class="couverture_livre" src="../Addons/Images_de_couverture/2876952122.jpg" alt="2876952122"> <!--Changer l'image de couverture-->
+            <img class="couverture_livre" src="../Addons/Images_de_couverture/2876952068.jpg" alt="2876952068"> <!--Changer l'image de couverture-->
             <button id="plein-ecran">Plein écran</button>
         </div>
 
         <div class="texte-défilant">
-            <h1>Dragon Ball, Tome 6 : L'Empire du ruban rouge</h1> <!--Changer Tire du livre-->
-            <p>Sangoku se lance dans une aventure pour affronter l'organisation maléfique du Ruban Rouge, tout en cherchant à empêcher leurs plans de conquête mondiale.</p> <!--Changer le résumé-->
+            <h1>Dragon Ball, Tome 2 : Kaméhaméha</h1> <!--Changer Tire du livre-->
+            <p>Sangoku continue sa quête avec Bulma et fait la rencontre de maîtres et d'ennemis redoutables. <br> Il apprend de nouvelles techniques de combat, dont le célèbre Kaméhaméha, et se prépare pour des défis plus intenses.</p> <!--Changer le résumé-->
         </div>
     </div>
 
     <div class="book-info">
         <h3>Informations supplémentaires :</h3> <!--Changer les infos supp sauf auteur, genre et langues-->
         <ol>
-            <li>n° ISBN : 2876952122 </li>
+            <li>n° ISBN : 2876952068 </li>
             <li>Auteur(s) et éditeur(s) : Akira Toriyama </li>
-            <li>Date de publication : 1 novembre 1995 </li>
+            <li>Date de publication : 3 juin 1993 </li>
             <li>Genre : manga </li>
             <li>Langue(s) : Français, Chinois </li>
         </ol>

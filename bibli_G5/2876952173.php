@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tome 4</title> <!--Changer Titre de la page-->
+    <title>Tome 7</title> <!--Changer Titre de la page-->
     <link rel="icon" href="../Addons/Logos/Logo_DBZ_2.png" type="image/x-icon">
     <link rel="stylesheet" href="dbz_style.css">
     <style>
@@ -14,32 +14,28 @@
 
 <body>
 
-    <nav class="bandeau-navigation">
-        <a href="index.html">
-            <img src="../Addons/Logos/Logo_DBZ.png" alt="Description de l'image">
-        </a>
-    </nav>
+    <?php require "nav.php"; ?>
 
     <div class="marge-bandeau"></div>
 
     <div class="contenu-scrollable">
         <div class="image-fixe">
-            <img class="couverture_livre" src="../Addons/Images_de_couverture/2876952106.jpg" alt="2876952106"> <!--Changer l'image de couverture-->
+            <img class="couverture_livre" src="../Addons/Images_de_couverture/2876952173.jpg" alt="2876952173"> <!--Changer l'image de couverture-->
             <button id="plein-ecran">Plein écran</button>
         </div>
 
         <div class="texte-défilant">
-            <h1>Dragon Ball, Tome 4 : Le Tournoi</h1> <!--Changer Tire du livre-->
-            <p>Le tournoi d'arts martiaux approche et Sangoku y participe pour tester ses compétences. <br>Il y affronte des adversaires redoutables et développe de nouvelles amitiés.</p> <!--Changer le résumé-->
+            <h1>Dragon Ball, Tome 7 : La Menace</h1> <!--Changer Tire du livre-->
+            <p>Les dangers s'intensifient alors que l'organisation du Ruban Rouge déploie des ennemis redoutables pour contrer Sangoku. <br> Ce dernier doit s'allier à de nouveaux alliés pour triompher</p> <!--Changer le résumé-->
         </div>
     </div>
 
     <div class="book-info">
         <h3>Informations supplémentaires :</h3> <!--Changer les infos supp sauf auteur, genre et langues-->
         <ol>
-            <li>n° ISBN : 2876952106 </li>
+            <li>n° ISBN : 2876952173 </li>
             <li>Auteur(s) et éditeur(s) : Akira Toriyama </li>
-            <li>Date de publication : 3 novembre 1993 </li>
+            <li>Date de publication : 11 mai 1994 </li>
             <li>Genre : manga </li>
             <li>Langue(s) : Français, Chinois </li>
         </ol>

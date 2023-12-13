@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tome 1</title> <!--Changer Titre de la page-->
+    <title>Tome 10</title> <!--Changer Titre de la page-->
     <link rel="icon" href="../Addons/Logos/Logo_DBZ_2.png" type="image/x-icon">
     <link rel="stylesheet" href="dbz_style.css">
     <style>
@@ -14,32 +14,28 @@
 
 <body>
 
-    <nav class="bandeau-navigation">
-        <a href="index.html">
-            <img src="../Addons/Logos/Logo_DBZ.png" alt="Description de l'image">
-        </a>
-    </nav>
+    <?php require "nav.php"; ?>
 
     <div class="marge-bandeau"></div>
 
     <div class="contenu-scrollable">
         <div class="image-fixe">
-            <img class="couverture_livre" src="../Addons/Images_de_couverture/287695205X.jpg" alt="287695205X"> <!--Changer l'image de couverture-->
+            <img class="couverture_livre" src="../Addons/Images_de_couverture/2876952203.jpg" alt="2876952203"> <!--Changer l'image de couverture-->
             <button id="plein-ecran">Plein écran</button>
         </div>
 
         <div class="texte-défilant">
-            <h1>Dragon Ball, Tome 1 : Sangoku</h1> <!--Changer Tire du livre-->
-            <p>Le récit commence avec Sangoku, un jeune garçon doté de pouvoirs incroyables, qui part à l'aventure pour trouver les Dragon Balls. <br>Il rencontre Bulma et ensemble, ils commencent un voyage pour collecter ces mystérieuses boules magiques.</p> <!--Changer le résumé-->
+            <h1>Dragon Ball, Tome 10 : Le Miraculé</h1> <!--Changer Tire du livre-->
+            <p>Sangoku et ses amis font face à de nouveaux défis, des ennemis redoutables et des révélations inattendues alors qu'ils continuent leur voyage.</p> <!--Changer le résumé-->
         </div>
     </div>
 
     <div class="book-info">
         <h3>Informations supplémentaires :</h3> <!--Changer les infos supp sauf auteur, genre et langues-->
         <ol>
-            <li>n° ISBN : 287695205X </li>
+            <li>n° ISBN : 2876952203 </li>
             <li>Auteur(s) et éditeur(s) : Akira Toriyama </li>
-            <li>Date de publication : 17 mai 1993 </li>
+            <li>Date de publication : 11 juillet 1994 </li>
             <li>Genre : manga </li>
             <li>Langue(s) : Français, Chinois </li>
         </ol>
