@@ -19,6 +19,7 @@ $pageTitle = "DBZ'LIB";
                 <img src="../Addons/Images_de_couverture/287695205X.jpg" alt="Tome 1">
                 <p class ="nom_livre">Dragon Ball, Tome 1 : Sangoku</p>
                 <p>Akira Toriyama | 17 mai 1993 </p>
+                
                 </a>
             </div>
         </li>

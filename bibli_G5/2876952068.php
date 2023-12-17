@@ -4,9 +4,11 @@
 <?php
 $pageTitle = "Tome 2";
 ?>
+
 <?php require "header.php"; ?>
 
 <body>
+    
 
     <?php require "nav.php"; ?>
 

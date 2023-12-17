@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 
+<?php
+$pageTitle = "Tome 1";
+?>
+
 <?php require "header.php"; ?>
 
 <body>
-
+    
     <?php require "nav.php"; ?>
 
     <div class="marge-bandeau"></div>
@@ -77,7 +81,12 @@
                 }
             });
         });
+
+
+            
     </script>
+
+<?php require "footer.php"; ?>
 
 </body>
 

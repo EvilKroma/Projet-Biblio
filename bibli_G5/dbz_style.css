@@ -92,7 +92,7 @@
     }
 
     .image-fixe {
-        position: static; 
+        position: fixed; 
         width: calc(100% - 20px);
         margin-bottom: 20px; 
         margin-left: 10px; 
@@ -116,6 +116,7 @@
 
 
 /* Styles pour le bouton Plein écran */
+
 #plein-ecran {
     display: block;
     margin: 10px auto;
@@ -129,5 +130,12 @@
 #plein-ecran:hover {
     background-color: #555;
 }
+
+/*Style footer*/
+
+footer img {
+    margin-left: 0%;
+}
+
 
 
