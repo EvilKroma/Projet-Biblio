@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+    
 <?php
 $pageTitle = "DBZ'LIB";
 ?>
@@ -18,21 +19,19 @@ $pageTitle = "DBZ'LIB";
 
         $images = [
             "287695205X",
-            
-            "2876952068", //2
+            "2876952068", 
             "2876952076",
             "2876952106",
             "2876952114",
             "2876952122",
             "2876952173",
             "2876952181",
-            "287695219X", // 9
+            "287695219X", 
             "2876952203"
         ];
 
         $urls = [
             "287695205X.php",
-            
             "2876952068.php",
             "2876952076.php",
             "2876952106.php",
@@ -53,11 +52,11 @@ $pageTitle = "DBZ'LIB";
             exit;
         }
 
-        $counter = 0; // Compteur pour les images
+        $counter = 0; 
         while ($row = mysqli_fetch_assoc($result)) {
             echo "<li>";
             echo "<div class='Tome'>";
-            echo "<a href='http://localhost/Projet-Biblio/bibli_G5/{$urls[$counter]}' class='lien'>"; // Lien dynamique
+            echo "<a href='http://localhost/Projet-Biblio/bibli_G5/{$urls[$counter]}' class='lien'>"; 
             echo "<img src='../Addons/Images_de_couverture/{$images[$counter]}.jpg' alt='" . $row['titre'] . "'>";
             echo "<p class='nom_livre'>" . $row['titre'] . "</p>";
             echo "<p>" . $row['editeur'] . " | " . $row['annee'] . "</p>";
