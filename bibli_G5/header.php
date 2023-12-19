@@ -7,8 +7,6 @@
     <?php
     include 'connexion_bdd.php'; 
     ?>
-    <style>
-       
-    </style>
 </head>
+
 

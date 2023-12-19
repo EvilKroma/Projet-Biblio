@@ -6,6 +6,5 @@ if (!$link) {
     exit;
 }
 
-echo "Succès : une connexion correcte à MySQL a été faite";
-echo "La base de données g05 a été ouverte";
+
 ?>

@@ -1,8 +1,8 @@
-<?php 
-    require "header.php"; 
-    include 'déconnexion_bdd.php'; 
+<?php
+    include 'deconnexion_bdd.php'; 
 ?>
 
 <footer>
-    <p>Site créé dans le cadre d'un projet à l'IPSSI. <img src="../Addons/Logos/Logo_IPSSI.jpg" alt=""/></p>
+    <p>Site créé dans le cadre d'un projet à l'IPSSI. </p>
+    <link rel="stylesheet" href="dbz_style.css">
 </footer>

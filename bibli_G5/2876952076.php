@@ -81,7 +81,7 @@ $pageTitle = "Tome 3";
             });
         });
     </script>
-
+    <?php require "footer.php"; ?>
 </body>
 
 </html>

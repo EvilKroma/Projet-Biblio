@@ -81,7 +81,7 @@ $pageTitle = "Tome 10";
             });
         });
     </script>
-
+    <?php require "footer.php"; ?>
 </body>
 
 </html>

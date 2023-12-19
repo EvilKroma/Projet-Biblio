@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <?php
 $pageTitle = "DBZ'LIB";
 ?>
@@ -13,97 +12,65 @@ $pageTitle = "DBZ'LIB";
     <?php require "nav.php"; ?>
 
     <ul class="book_list">
-        <li>
-            <div class="Tome">
-                <a href="287695205X.php" class="lien">
-                <img src="../Addons/Images_de_couverture/287695205X.jpg" alt="Tome 1">
-                <p class ="nom_livre">Dragon Ball, Tome 1 : Sangoku</p>
-                <p>Akira Toriyama | 17 mai 1993 </p>
-                
-                </a>
-            </div>
-        </li>
-        <li>
-            <div class="Tome">
-                <a href="2876952068.php">
-                <img src="../Addons/Images_de_couverture/2876952068.jpg" alt="Tome 2">
-                <p class ="nom_livre">Dragon Ball, Tome 2 : Kamehameha</p>
-                <p>Akira Toriyama | 3 juin 1993 </p>
-                </a>
-            </div>
-        </li>
-        <li>
-            <div class="Tome">
-                <a href="2876952076.php">
-                <img src="../Addons/Images_de_couverture/2876952076.jpg" alt="Tome 3">
-                <p class ="nom_livre">Dragon Ball, Tome 3 : L'Initiation</p>
-                <p>Akira Toriyama | 8 septembre 1993 </p>
-                </a>
-            </div>
-        </li>
-        <li>
-            <div class="Tome">
-                <a href="2876952106.php">
-                <img src="../Addons/Images_de_couverture/2876952106.jpg" alt="Tome 4">
-                <p class ="nom_livre">Dragon Ball, Tome 4 : Le Tournoi</p>
-                <p>Akira Toriyama | 3 novembre 1993 </p>
-                </a>
-            </div>
-        </li>
-        <li>
-            <div class="Tome">
-                <a href="2876952114.php">
-                <img src="../Addons/Images_de_couverture/2876952114.jpg" alt="Tome 5">
-                <p class ="nom_livre">Dragon Ball, Tome 5 : L'Ultime Combat</p>
-                <p>Akira Toriyama | 27 janvier 1994 </p>
-                </a>
-            </div>
-        </li>
-        <li>
-            <div class="Tome">
-                <a href="2876952122.php">
-                <img src="../Addons/Images_de_couverture/2876952122.jpg" alt="Tome 6">
-                <p class ="nom_livre">Dragon Ball, Tome 6 : L'Empire du ruban rouge</p>
-                <p>Akira Toriyama | 1 novembre 1995 </p>
-                </a>
-            </div>
-        </li>
-        <li>
-            <div class="Tome">
-                <a href="2876952173.php">
-                <img src="../Addons/Images_de_couverture/2876952173.jpg" alt="Tome 7">
-                <p class ="nom_livre">Dragon Ball, Tome 7 : La Menace</p>
-                <p>Akira Toriyama | 11 mai 1994 </p>
-                </a>
-            </div>
-        </li>
-        <li>
-            <div class="Tome">
-                <a href="2876952181.php">
-                <img src="../Addons/Images_de_couverture/2876952181.jpg" alt="Tome 8">
-                <p class ="nom_livre">Dragon Ball, Tome 8 : Le Duel</p>
-                <p>Akira Toriyama | 28 juin 1994 </p>
-                </a>
-            </div>
-        </li>
-        <li>
-            <div class="Tome">
-                <a href="287695219X.php">
-                <img src="../Addons/Images_de_couverture/287695219X.jpg" alt="Tome 9">
-                <p class ="nom_livre">Dragon Ball, Tome 9 : Sangohan</p>
-                <p>Akira Toriyama | 11 juillet 1994 </p>
-                </a>
-            </div>
-        </li>
-        <li>
-            <div class="Tome">
-                <a href="2876952203.php">
-                <img src="../Addons/Images_de_couverture/2876952203.jpg" alt="Tome 10">
-                <p class ="nom_livre">Dragon Ball, Tome 10 : Le Miracule</p>
-                <p>Akira Toriyama | 11 juillet 1994 </p>
-                </a>
-            </div>
-        </li>
+        <?php
+        
+        include 'connexion_bdd.php';
+
+        $images = [
+            "287695205X",
+            
+            "2876952068", //2
+            "2876952076",
+            "2876952106",
+            "2876952114",
+            "2876952122",
+            "2876952173",
+            "2876952181",
+            "287695219X", // 9
+            "2876952203"
+        ];
+
+        $urls = [
+            "287695205X.php",
+            
+            "2876952068.php",
+            "2876952076.php",
+            "2876952106.php",
+            "2876952114.php",
+            "2876952122.php",
+            "2876952173.php",
+            "2876952181.php",
+            "287695219X.php",
+            "2876952203.php"
+        ];
+
+        $query = "SELECT titre, editeur, annee FROM livre";
+
+        $result = mysqli_query($link, $query);
+
+        if (!$result) {
+            echo "Erreur : Impossible de récupérer les données";
+            exit;
+        }
+
+        $counter = 0; // Compteur pour les images
+        while ($row = mysqli_fetch_assoc($result)) {
+            echo "<li>";
+            echo "<div class='Tome'>";
+            echo "<a href='http://localhost/Projet-Biblio/bibli_G5/{$urls[$counter]}' class='lien'>"; // Lien dynamique
+            echo "<img src='../Addons/Images_de_couverture/{$images[$counter]}.jpg' alt='" . $row['titre'] . "'>";
+            echo "<p class='nom_livre'>" . $row['titre'] . "</p>";
+            echo "<p>" . $row['editeur'] . " | " . $row['annee'] . "</p>";
+            echo "</a>";
+            echo "</div>";
+            echo "</li>";
+
+            $counter++;
+        }
+
+        mysqli_free_result($result);
+        mysqli_close($link);
+        ?>
     </ul>
     
 </body>
