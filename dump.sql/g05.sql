@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mer. 13 déc. 2023 à 11:15
--- Version du serveur : 10.4.28-MariaDB
--- Version de PHP : 8.2.4
+-- Généré le : mer. 20 déc. 2023 à 09:20
+-- Version du serveur : 10.4.32-MariaDB
+-- Version de PHP : 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -33,6 +33,23 @@ CREATE TABLE `auteur` (
   `idRole` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Déchargement des données de la table `auteur`
+--
+
+INSERT INTO `auteur` (`idPersonne`, `idLivre`, `idRole`) VALUES
+(1, '1', 1),
+(1, '287695205X', 1),
+(1, '2876952068', 1),
+(1, '2876952076', 1),
+(1, '2876952106', 1),
+(1, '2876952114', 1),
+(1, '2876952122', 1),
+(1, '2876952173', 1),
+(1, '2876952181', 1),
+(1, '287695219X', 1),
+(1, '2876952203', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -49,7 +66,7 @@ CREATE TABLE `editeur` (
 --
 
 INSERT INTO `editeur` (`id`, `libelle`) VALUES
-(1, 'Akira Toriyama');
+(1, 'Glénat');
 
 -- --------------------------------------------------------
 

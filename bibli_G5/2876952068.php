@@ -30,7 +30,8 @@ $pageTitle = "Tome 2";
         <h3>Informations supplémentaires :</h3> <!--Changer les infos supp sauf auteur, genre et langues-->
         <ol>
             <li>n° ISBN : 2876952068 </li>
-            <li>Auteur(s) et éditeur(s) : Akira Toriyama </li>
+            <li>Auteur(s) : Akira Toriyama</li>
+            <li>Editeur(s) : Glénat </li>
             <li>Date de publication : 3 juin 1993 </li>
             <li>Genre : manga </li>
             <li>Langue(s) : Français, Chinois </li>

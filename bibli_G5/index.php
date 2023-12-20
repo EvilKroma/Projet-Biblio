@@ -43,7 +43,10 @@ $pageTitle = "DBZ'LIB";
             "2876952203.php"
         ];
 
-        $query = "SELECT titre, editeur, annee FROM livre";
+        $query = "  SELECT titre, annee, personne.nom, personne.prenom
+                    FROM livre
+                    JOIN Auteur ON auteur.idLivre = livre.isbn
+                    JOIN Personne ON auteur.idpersonne = personne.id";
 
         $result = mysqli_query($link, $query);
 
@@ -57,9 +60,9 @@ $pageTitle = "DBZ'LIB";
             echo "<li>";
             echo "<div class='Tome'>";
             echo "<a href='http://localhost/Projet-Biblio/bibli_G5/{$urls[$counter]}' class='lien'>"; 
-            echo "<img src='../Addons/Images_de_couverture/{$images[$counter]}.jpg' alt='" . $row['titre'] . "'>";
+            echo "<img src='../Addons/Images_de_couverture/{$images[$counter]}.jpg' >";
             echo "<p class='nom_livre'>" . $row['titre'] . "</p>";
-            echo "<p>" . $row['editeur'] . " | " . $row['annee'] . "</p>";
+            echo "<p>" . $row['nom']  . $row['prenom'] . " | " . $row['annee'] . "</p>";
             echo "</a>";
             echo "</div>";
             echo "</li>";
